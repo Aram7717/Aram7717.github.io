@@ -1,0 +1,127 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Space+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url("../image2/pexels-harrison-candlin-2441454.jpg") top;
+    margin: 0px;
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    margin: 0px 0px;
+
+}
+
+ul {
+
+    background: rgba(3, 26, 200, 0.562);
+
+    padding: 4px 5px 4px 5px;
+    margin: 0px;
+    /* border: 2px solid red; */
+}
+
+.libox {
+
+    padding: 10px;
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+.linkstyle {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #c5c8cf;
+    text-indent: 1.2rem;
+    font-family: 'Roboto Mono',
+        monospace;
+    font-size: 1.1rem;
+    background: #0000008b;
+    padding: 4px;
+    
+}
+
+.linkstyle:hover {
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    border: 1px solid #c1c1c1;
+    background-color: #651c476f;
+}
+
+
+#hometext {
+    text-transform: capitalize;
+    color: #d0dedf;
+    text-indent: 1.5rem;
+    font-size: 1.2rem;
+    background: #30399c5d;
+    margin: 0px;
+    padding: 4px 0px 4px 0px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.footer8 {
+    height: 100%;
+    /* background: url("../image2/pexels-harrison-candlin-2441454.jpg") top ;
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0px 0px;
+    position: relative;
+    border: 2px solid red; */
+}
+
+.infooter {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: #000;
+    
+    margin: -6.25rem -6.25rem;
+    width: 12.5rem;
+    height: 12.5rem;
+    text-align: center;
+}
+
+
+
+
+
+.centertext {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+   
+
+}
+
+footer {
+    height: 100px;
+
+    position: relative;
+    background: rgba(3, 26, 200, 0.562);
+    margin-top: -100px;
+    text-align: center;
+}
+
+#footertext {
+    color: rgb(197, 207, 222);
+    font-size:1.1rem;
+}
+
+a#externallinks {
+    color: rgb(26, 142, 8);
+    text-decoration: none;
+}
