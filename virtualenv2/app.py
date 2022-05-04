@@ -6,12 +6,12 @@ from datetime import datetime
 app = Flask(__name__)
 
 
-app.secret_key = 'Secretkey'
+app.secret_key = '#'
 
 app.config['MAIL_SERVER'] = "smtp.gmail.com"
 app.config['MAIL_PORT'] = 587
-app.config['MAIL_USERNAME'] = 'aram.moh@yandex.com'
-app.config['MAIL_PASSWORD'] = 'TAwiq3RUqEVaF2X'
+app.config['MAIL_USERNAME'] = '#'
+app.config['MAIL_PASSWORD'] = '#'
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 mail = Mail(app)
@@ -34,8 +34,8 @@ def contact():
             flash('All fields are required.')
             return render_template('contact.html', form=form, date=date)
         else:
-            msg = Message(form.subject.data, sender='aram.moh@yandex.com',
-                          recipients=['mraram77@gmail.com'])
+            msg = Message(form.subject.data, sender='#',
+                          recipients=['#'])
 
             msg.body = """
             From: %s <%s>
