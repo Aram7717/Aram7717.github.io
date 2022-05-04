@@ -21,7 +21,7 @@ mail = Mail(app)
 def home():
     date = datetime.now().year
 
-    return render_template('home.html', date=date)
+    return render_template('index.html', date=date)
 
 
 @app.route('/contact', methods=['GET', 'POST'])
