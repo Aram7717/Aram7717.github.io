@@ -1,13 +1,13 @@
 class Config(object):
-    SECRET_KEY ='jigsaw11235'
+    SECRET_KEY ='#'
     DEBUG = True
     MAIL_SERVER='smtp.gmail.com'
     MAIL_PORT = 587
-    MAIL_USERNAME = 'mraram77@gmail.com'
-    MAIL_PASSWORD = 'zljjraljbnlwsjzl'
+    MAIL_USERNAME = '#'
+    MAIL_PASSWORD = '#'
     MAIL_USE_TLS = True
     MAIL_USE_SSL = False
-    MAIL_DEFAULT_SENDER = 'mraram77@gmail.com'
+    MAIL_DEFAULT_SENDER = '#'
     FLASK_ENV = 'development'
     TESTING = False
     MAIL_SUPPRESS_SEND = False
