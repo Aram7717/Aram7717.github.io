@@ -1,0 +1,23 @@
+.linkstyle {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #c5c8cf;
+    text-indent: 1.2rem;
+    font-family: 'Roboto Mono',
+        monospace;
+    font-size: 1.1rem;
+    background: #a0b40c6f;
+    padding: 4px;
+    /* border: 2px solid #e60404f6; */
+
+}
+
+.linkstyle:hover {
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    border: 1px solid #c1c1c1;
+    background-color: #113368e5;
+}

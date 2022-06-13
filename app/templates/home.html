@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	
+	<script src="https://kit.fontawesome.com/a2f0dc5869.js" crossorigin="anonymous"></script>
+
+    {% block title %}
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css')}}">
+	{% endblock %}
+<title>Portfolio</title>
+</head>
+<body>
+	
+	    <div class="header">
+	    <ul>
+
+			<li class="libox">
+			<a class="linkstyle" href="{{url_for('home')}}">home</a>
+			</li>
+			<li class="libox">
+				<a class="linkstyle" href="{{url_for('about')}}">about</a>
+			</li>
+			<li class="libox">
+				<a class="linkstyle" href="{{url_for('works')}}">works</a>
+			</li>
+			<li  class="libox">
+				<a class= "linkstyle" href="{{url_for('contact')}}">contact</a>
+			</li>
+			
+		</ul>
+	    </div>
+		{% block content %}
+		<div id="hometext">
+		<p >home</p>
+	    </div>    
+		<div class="infooter">
+				<div class="rtext" id="text12">
+                <p class="centertext" >hello</p>
+				<p class="centertext" id="demo"> </p>
+
+				<script src="{{ url_for('static', filename='js/typing.js') }}"></script>
+				</div>
+				
+
+		</div>
+			
+	    {% endblock %}
+	
+		<footer >
+			<p class="footertext">This website has been made on Flask, Pictures are from <a id="externallinks" href="https://www.pexels.com/">Pexels</a></p>
+			<p class="footertext">{{ date }} &copy domain.com</p>
+		</footer>
+</body>
+</html>

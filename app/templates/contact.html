@@ -1,0 +1,46 @@
+{% extends "home.html" %} 
+
+{% block title %}
+    <link rel="stylesheet" type="text/css" href={{url_for("static", filename="css/contact1.css" )}}>
+{% endblock %}    
+
+{% block content %}
+        <div id="hometext">
+            <p>contact</p>
+        </div>
+        <div class="infooter">
+            <div class="rtext">
+                <form action="{{ url_for('contact') }}" method="post">
+                        {{ form.hidden_tag() }}
+                        
+                        <label >{{ form.name.label }}</label>
+                        {{ form.name }}
+
+            
+            
+                        <label>{{ form.email.label }}</label>
+                        {{ form.email }}
+            
+            
+            
+                        <label>{{ form.subject.label }}</label>
+                        {{ form.subject }}
+            
+            
+            
+                        <label>{{ form.message.label }}</label>
+                        {{ form.message }}
+            
+                        <br>
+                        <br>
+            
+                        {{ form.submit }}
+            
+        
+        
+                </form>
+            </div>
+        </div>
+{% endblock %}
+
+

@@ -1,0 +1,135 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Space+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background: url("../image2/pexels-harrison-candlin-2441454.jpg");
+    height: 100%;
+    margin-right: -30px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 5% auto 5%;
+    gap: 0px;
+
+    grid-template-areas:
+        "header"
+        "pagename"
+        "main"
+        "footer"
+    ;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.header {
+
+    background: rgba(3, 26, 200, 0.562);
+
+    padding: 4px 5px 4px 5px;
+    margin: 0px;
+    grid-area: "header";
+}
+
+.libox {
+
+padding: 10px;
+list-style-type: none;
+display: inline-block;
+
+}
+
+.linkstyle {
+text-decoration: none;
+text-transform: capitalize;
+color: #c5c8cf;
+text-indent: 1.2rem;
+font-family: 'Roboto Mono',
+    monospace;
+font-size: 1.1rem;
+background: #0000008b;
+padding: 4px;
+
+}
+
+.linkstyle:hover {
+cursor: pointer;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+
+border: 1px solid #c1c1c1;
+background-color: #651c476f;
+}
+
+
+#hometext {
+    text-transform: capitalize;
+    color: #d0dedf;
+    text-indent: 1.5rem;
+    font-size: 1.2rem;
+    background: #30399c5d;
+    margin: 0px;
+    padding: 4px 0px 4px 0px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+
+    grid-area: "pagename";
+}
+
+/* .maincontent {
+height: 100%;
+/* background: url("../image2/pexels-harrison-candlin-2441454.jpg") top ;
+width: 100vw;
+height: 100vh;
+
+margin: 0px 0px;
+position: relative;
+border: 2px solid red; */
+
+
+.infooter {
+    grid-area: "main";
+    text-align: center;
+}
+
+
+.rtext {
+    margin-top: 20px;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.centertext {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+
+
+}
+
+footer {
+    background: rgba(3, 26, 200, 0.562);
+    
+    text-align: center;
+    margin-top: -100px;
+    grid-area: 'footer';
+}
+
+.footertext {
+    color: rgb(197, 207, 222);
+    font-size:1.1rem;
+}
+
+a#externallinks {
+    color: rgb(26, 142, 8);
+    text-decoration: none;
+}
